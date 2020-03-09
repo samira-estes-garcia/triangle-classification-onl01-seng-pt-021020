@@ -8,7 +8,7 @@ class Triangle
     @length_side_three = length_side_three
   end
   
-  def kind(length_side_one, length_side_two, length_side_three) 
+  def kind 
     if length_side_one == length_side_two && length_side_two == length_side_three
         :equilateral
     elsif length_side_one == length_side_two || length_side_two == length_side_three || length_side_one == length_side_three
