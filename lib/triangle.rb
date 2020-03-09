@@ -18,7 +18,7 @@ class Triangle
     end
   end
   
-  def validate_triangle
+  def legal_triangle?
     legal_triangle = [(length_side_one + length_side_two > length_side_three), (length_side_one + length_side_three > length_side_two), (length_side_two + length_side_three > length_side_one)]
     [length_side_one, length_side_two, length_side_three].each do |side|
       legal_triangle << false if side <= 0 
